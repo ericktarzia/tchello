@@ -1,0 +1,38 @@
+<h1>Clientes</h1>
+
+<table class="table">
+	<thead>
+		<tr>
+			<td>Nome</td>
+			<td>CPF</td>
+			<td>Nascimento</td>
+			<td>Moeda</td>
+			<td>Saldo</td>
+		</tr>
+	</thead>
+	<tbody>
+		{loop="$clientes"}
+		<tr>
+			<td>
+				{$value.nome}
+			</td>
+			<td>
+				{$value.cpf}
+			</td>
+			<td>
+				{$value.nascimento}
+			</td>
+			<td>
+				{$value.moeda}
+			</td>
+			<td>
+				{function="number_format($value.saldo,2)"}
+			</td>
+		</tr>
+		{/loop}
+	</tbody>
+
+</table>
+<div>
+	<a href="clientes_json">JSON</a>
+</div>

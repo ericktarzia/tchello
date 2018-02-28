@@ -1,0 +1,20 @@
+{
+    "name": "erick/tchello",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Erick Tarzia",
+            "email": "ericktarzia@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require":{
+        "slim/slim":"2.0",
+        "rain/raintpl":"3.0.0"
+    },
+    "autoload":{
+        "psr-4":{
+            "Ericktarzia\\": "vendor\\ericktarzia\\src"
+        }
+    }
+}
